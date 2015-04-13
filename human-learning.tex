@@ -1,0 +1,122 @@
+\documentclass[12pt,a4paper,titlepage]{scrreprt}
+\usepackage{url}
+\usepackage[style=apa,backend=biber]{biblatex}
+\DeclareLanguageMapping{english}{english-apa}
+\usepackage{fullpage}
+\usepackage{amsmath,amssymb}
+\usepackage{graphics,graphicx,wrapfig,float,epsfig,subfigure,sidecap}
+\usepackage{url}
+\usepackage{svg}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage[margin=0.45in]{geometry}
+\usepackage[utf8]{inputenc}
+
+\usepackage{color}
+%\addbibresource{OnlineExperiments.bib}
+
+\begin{document}
+
+    \title{Enhancing Human Learning}
+    \subtitle{Personalizing Learning for the World}
+    \date{\small{{rtibbles}@ucsd.edu}}
+    \author{{\bf Richard Tibbles} \\ \\
+                \small{University of California, San Diego} \\
+                \small{Department of Cognitive Science} \\
+                \small{Center for Human Development}}
+    \maketitle
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\chapter{Introduction}
+    
+    The basic question of Cognitive Science is to understand the function and instantiation of the human mind. The investigation of such phenomena thus far in the history of Science has been highly focused on the minds of individuals in very particular social contexts. In contrast to the physical sciences, where the particular spatial location of experiments is assumed to have no bearing on the fundamental laws being investigated (and more strongly, were it to do so, these would not be 'fundamental' laws as we understand them), it is at the very least an open question in psychological sciences the extent to which the social context affects the phenomena under investigation. In addition to social context, the population of minds in which psychological investigations are generally undertaken is also considerably limited as compared to the broad swathe of humanity.
+
+    The Internet, and the rise of online learning (whether through MOOCs, the increasing use of learning management systems in K-12 and Higher Education, or other online learning platforms, such as Khan Academy) gives an opportunity to collect fine grained observations about learning in actual learning environments. Researchers have leapt on this with alacrity, instrumenting, hypothesis testing, and data mining the measurable components of online learning to glean new insights about human learning. However, as with much of Cognitive Science in general, the `participants` in this research have been predominantly selected from the usual pool of Western, Educated, and Rich adults from Industrialized Democratic countries- if we truly want to enhance human learning then doing so for a group of countries (and citizens within those countries) for whom Education as a system is already working incredibly well, then at best it would seem like we are attempting to gild the lily, at worst we will be aiming to improve a system for the needs of people whom it already serves best, while ignoring the needs of those who stand most to benefit from improvements. The rich will get richer, and the poor will get poorer.
+
+\newpage
+
+\chapter{Related Work}
+\section{Online Learning}
+\subsection{Understanding Learning through Data Mining}
+
+\subsection{Personalizing Learning Online}
+
+\subsection{Generalizability of Results}
+\begin{quote}Some say that psychological science is based on research with rats, the mentally disturbed, and college students. We study rats because they can be controlled, the disturbed because they need help, and college students because they are available. \parencite{birnbaum_psychological_2000}
+\end{quote}
+While it is obvious to practising researchers that most participant pools are composed of very limited populations \parencite{buchanan_using_1999,birnbaum_psychological_2000,kraut_psychological_2004,birnbaum_human_2004,buhrmester_amazons_2011}, the classification of the majority of behavioural experiment participants as Western, Educated, Industrialised, Rich, from Democratic countries (or WEIRD), and the highlighting of disparities in performance on canonical psychological tasks between these participants and a broader selection of humanity  \parencite{henrich_beyond_2010} has helped to bring the limitations of these populations into sharp focus. While the strong thesis of Henrich et al. that the most frequent participants in behavioural experiments (i.e. American undergraduate students) are outliers in human psychology goes too far \parencite{bennis_weirdness_2010}, it is generally acceptable at least that claims of universality of behavioural phenomena from this sample go too far \parencite{baumard_weird_2010,ceci_weird_2010,konecni_responsible_2010}.
+
+\section{Offline Computer Assisted Learning}
+
+\subsection{History of Computer Assisted Learning}
+
+\subsection{KA Lite}
+
+\section{Online Experiments}
+To complement the use of highly ecologically valid (but less controlled) online learning, we can broaden the reach of research beyond the participants immediately available in the vicinity of the laboratory by using Internet based studies to recruit a far broader and heterogeneous population. In early web studies, the lack of widespread Internet penetration led to concerns of repeating the same population difficulties shown in undergraduate recruitment - however, in a range of areas of study, from decision making to social psychology, experiments successfully replicated the results of laboratory based studies, while still attracting a more diverse sample than would ordinarily be the case \parencite{krantz_comparing_1997,buchanan_using_1999,birnbaum_decision_2000,mcgraw_integrity_2000,gosling_should_2004,ritter_internet_2004}. Further, the development of this new methodology has rapidly led to the formulation of best practices to overcome some of the perceived issues of confidentiality, reduced experimental control, multiple submissions, incomplete submissions, dropout, and misunderstanding instructions \parencite{reips_web_2000,reips_standards_2002,birnbaum_human_2004}. While it is not always the case that study materials used in laboratory experiments can be used identically online and yield the same results \parencite{buchanan_nonequivalence_2005}, the web provides an intermediary point between the laboratory and field studies to test the generalizability of experimental procedures and findings to less controlled contexts. It can also reduce experimenter bias and demand characteristics, and allow for experimental measures between subjects of motivational effects of studies through comparisons of drop out rate \parencite{reips_web_2000}, which is less measurable in laboratory experiments due to the pressure from the social context of the experiment, and frequently the desire for class credit.
+
+\subsection{Current Practices}
+Many participants for online experiments are now paid, similarly to many laboratory studies, particularly through the use of crowdsourced labour platforms such as Amazon's Mechanical Turk \parencite{buhrmester_amazons_2011,rand_promise_2012,crump_evaluating_2013}. However, other work has relied entirely on voluntary participation, with significant boosts to participation coming from media coverage (and in the case of data gathered through the BBC UK Lab, through cooperation with the BBC television show \textit{Bang Goes the Theory}) \parencite{owen_putting_2010}. In addition, results relying entirely on voluntary participation have been able to produce results very similar to lab results, with more diverse populations, across age range, educational, and socio-economic background \parencite{germine_is_2012,halberda_number_2012}.
+
+\subsection{Challenges for Online Experiments}
+Intermittent connectivity, high latency, and variable participant hardware can pose significant challenges for online experiments. While precautions are taken to preload experimental materials to limit the impact of latency, even very recent and popular platforms for online experiments, such as testmybrain.org \parencite{germine_is_2012, halberda_number_2012} will fail if Internet connectivity is lost at critical moments in the experimental flow. This is a particular challenge when attempting to reach a more diverse population of participants, as this will also involve a more diverse range of Internet connections - both in terms of speed and reliability.
+
+Due to variability in participant hardware, and difficulties of controlling stimulus presentation through the web interface, very short stimulus presentation times, on the order of 64ms and below, have not been able to be used so far in web based experiments \parencite{crump_evaluating_2013}. Further, participant owned hardware is highly unlikely to be as optimized for rapid stimulus presentation and high fidelity response time recording. In addition to thresholding the lower limits for length of stimulus presentation, it is also important to understand the characteristics of different participant devices, and their accuracy with regards reaction time measurements.
+
+\chapter{Research Questions}
+\begin{itemize}
+\item How to personalize learning for all learners, based on individual differences in prior learning, motivation, culture, and developmental background?
+\item How to support teacher engagement with student data in order to allow teachers to participate in and accelerate students' personalized learning?
+\item What extrinsic reward structures best promote engagement and increase intrinsic motivation in learning, and how does this differ across learners from different cultures, and different developmental backgrounds?
+\end{itemize}
+\chapter{Proposed Research}
+\section{Big Data for Little People}
+\subsection{Personalizing for Individuals}
+
+Understand relevant variance between individuals in high dimensional data sets (large batteries of behavioural tests, plus neuro-imaging data). Correlate with differences in the effectiveness of different learning `microinterventions', in order to be able to customize and select different learning `microinterventions' and motivational frameworks for different students. Finally, develop measures sensitive to the variability discovered in the highly dimensional data sets but that can be integrated within an online learning system in order for the detection of such variability to be scalable.
+
+\subsection{Collaborative Design Spaces for Researchers and Teachers}
+
+In order to develop these subtle variations in learning activities, collaborative workspaces will be established (essentially after school programs associated with and possibly hosted at schools that serve low socio-economic status groups). Through collaboration between teachers, researchers, and `cognitive engineers' small changes will be tested on students attending the after school programme, who will also be co-enrolled in existing studies carried on at UCSD. This will mean that the effect of the small changes to the programme can be tracked on an individual basis for each student, and rather than assessing the impact of the intervention by the aggregate effect on the whole group, the variable effect of the intervention can be assessed for different individuals. This gives the opportunity to begin to develop truly personalized learning, as interventions that might be appropriate for one student and can give a significant boost might otherwise be thrown out due to their negative or null effect on other students.
+
+\section{Supporting Teachers Through Learning Analytics}
+\subsection{Coach Reports in KA Lite}
+
+The collection of data is not just of interest to researchers, but also to teachers. However, teachers are busy and are not always trained in the nuances of data analysis. Through iterative design sequences, data about students is presented to teachers in a way that gives them immediate access to time relevant information, while also scaffolding their engagement with more detailed reports and information.
+
+\section{Understanding Reward Structure for Learning}
+\subsection{Platform Building}
+In order to carry out online experiments, a framework for running online experiments has been created - this platform allows for the presentation of text, polygon, image, and auditory stimuli. In addition, the collection of mouse and keyboard responses is possible to collect user responses. Trials and blocks can be parameterized both to allow for experiments to be run with across and within participant designs.
+
+In order to facilitate the rapid creation and prototyping of experiments, a graphical user interface for the design of experiments is being created to implement experiments within this framework. 
+
+\subsection{Study 1: Extrinsic Rewards}
+
+Something about seeing if extrinsic rewards really do crowd out intrinsic motivation for learning tasks. Needs more thought though.
+
+\subsection{Study 2: Randomized Rewards}
+Variable reward schedules are shown to produce strongly appetitive behaviours in laboratory experiments. It has also been shown that this can have a positive influence on learning within an extrinsic reward structure [will also include preliminary results from a pseudo-experiment that had this feature in KA Lite]. However, what is unclear is whether this kind of variable reward schedule can increase intrinsic motivation to learn once the extrinsic reward structure has been taken away.
+
+In order to test this, participants will be asked to learn a sequence of declarative facts in a mastery driven way, where they are required to continue answering the multiple choice question until they get it right. They will earn a small reward when they correctly answer the question. Participants will then be tested on what they have learned. In the immediately following second block, they will again learn in a mastery driven way, but the only reward will be for completing the post-test. They will still be unable to proceed until they have correctly answered the questions, however. They will then be tested on the new material learned.
+
+Participants will be randomized into two groups - one group will receive fixed rewards after each question, while others will receive random `bumps' to their rewards, occasionally getting a 50\% (9\% of the time) or 100\% (1\% of the time) bonus to their reward.
+
+\subsection{Study 3: Reward Prediction Error}
+
+One model that predicts the impact of randomized rewards sequences is Reward Prediction Error - to enhance any effect found in Study 2, it may therefore be possible to identify those areas where participants are performing weakly/showing avoidance behaviour towards and deliberately manipulate the reward to enhance the reward prediction error when they successfully complete questions on those (and perhaps even when they are incorrect).
+
+We can then examine if this extrinsic reward system will alter their natural behaviour in a non-extrinsicially motivated form.
+
+\chapter{Contribution}
+\begin{itemize}
+\item Personalize learning based on individual differences, not aggregates.
+\item Use technology to enhance teaching and learning in more formal environments by involving teachers in the personalized learning process.
+\item Provide tools that recognize the needs of psychological scientists to rapidly generate and deploy experiments
+\item Understand the impact of motivational features on learning in simple controlled paradigms.
+\end{itemize}
+\printbibliography
+\end{document}
